@@ -15,7 +15,7 @@ print(files)    #files 리스트 값 출력
 with open(filenm, 'r', encoding='utf8') as f:
   dat = f.readlines()
 
-l = [ x.strip() for x in dat.split(',') ]
+l = [ x.strip() for x in dat.split() ] # to token
 
 if 'print' in l:
   print(l)
